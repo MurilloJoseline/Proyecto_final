@@ -1,0 +1,256 @@
+<!doctype html>
+  <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Joseline Murillo">
+        <meta name="description" content="Exposición - Pierre-Auguste Renoir">
+        <meta name="keywords" content="Bootstrap, Bootstrap 5.3, framework, html, css, maquetación web, arte, Impresionista, pintor, frances, colores, oleo">
+        <title>Exposición - Pierre-Auguste Renoir - </title>
+        <!-- La hoja de estilo de Bootstrap se enlaza con un CDN proporcionado por Bootstrap. -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- Cuando añadimos hojas de estilo propias es MUY IMPORTANTE colocarlas despues de la hoja de estilos de Bootstrap para que los estilos se sobreescriban correctamente en el navegador-->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+          
+      <header>
+        <!-- Bootstrap nos proporciona un templete básico para los menús de navegación por medio de la etiqueta nav y la clase navbar.
+        Esta información se puede encontrar en https://getbootstrap.com/docs/5.3/components/navbar/ -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary nav-principal ">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+                 <img src="Imagenes/logo2.png" width="50" height="50" alt="logo">
+             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav me-auto mb-2 lg-0" >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index2.html">Sobre el artista</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index3.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="index4.html">Exposiciones</a>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+  
+      </header>
+
+      <div class="container-fluid expoban">
+        <div class="row">
+            <div class="col-12">
+                <img src="Imagenes/ExposicionBanner.png" alt="expoba" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 expoban1" >
+                <img src="Imagenes/Expo info.png" style="width:100%; height:200px;">
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container contenido4">
+        <div class="row">
+            <div class="col-6 expo1">
+                <img src="Imagenes/Exposicion1.png" style="width: 100%;">
+            </div>
+            <div class="col-6 expo1">
+                <p class="lh-sm fs-4" style="margin-top: 130px;">Desde el 24 de mayo en la Ciudad de México podrás disfrutar de este  recorrido por la obra de Renoir a través de sus interpretaciones que hizo a lo largo de toda su vida, en sus obras.
+                    <br><br>
+                Esta exposición ha sido organizada y realizada con la colaboración científica y los préstamos excepcionales de los museos d’Orsay y de l’Orangerie.</p>
+            </div>
+        </div>
+
+        <div class="row expo2">
+            <div class="col-5 expo1">
+                <p class="lh-sm fs-5" style="margin-top: 90px;">El recorrido incluye alrededor de 60 piezas y presenta una evolución de la obra de Renoir desde un punto de vista nuevo. Destaca así el protagonismo de la parisina moderna en sus lienzos impresionistas, la visión más intimista de la imagen maternal y la belleza intemporal del desnudo integrado en la naturaleza, característico de sus últimos años.
+                    <br><br>
+                Comprometidos con la cultura, en esta muestra Fundación MAPFRE subraya el valor del conjunto artístico del pintor francés, permite hacer un recorrido por toda su trayectoria, y observar cómo evoluciona el artista a través de sus modelos. Esta exposición ha sido organizada y realizada con la colaboración científica y los préstamos excepcionales de los museos d’Orsay y de l´Orangerie.</p>
+            </div>
+            <div class="col-7">
+                <div class="embed-responsive embed-responsive-4by3 mapa-emb">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.448923413703!2d-99.13939549999999!3d19.436202299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200248453f8d1%3A0x5e67451bc487b600!2sMuseo%20Nacional%20De%20Arte%20(MUNAL)!5e0!3m2!1ses-419!2smx!4v1684294216303!5m2!1ses-419!2smx" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+            </div>
+        </div>
+        <div class="row expo3">
+            <div class="col-8">
+                <p class="fs-2" style="font-family: 'Nanum Gothic', sans-serif;">Pinturas que podras encontrar</p>
+            </div>
+        </div>
+        <div class="row bloque-interno">
+            <!-- En este ejemplo estamos aplicando tres clases para las columnas que funcionarán para el responsive. La clase que contiene lg es para la visualización en dispositivos grandes, la clase md para dispositivos medianos y sm para dispositivos pequeños.-->
+            <div class="col-4">
+                <div class="card">
+                    <img src="Imagenes/Card1.png" class="card-img-top" alt="Card1">
+                    <div class="card-body">
+                      <h5 class="card-title" id="flores">Fillette couchée sur l'herbe et jeune fille arrangeant un bouquet, 1890</h5>
+                  
+                
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal1">
+                  Conoce más
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-4" id="exampleModalLabel">Fillette couchée sur l'herbe et jeune fille arrangeant un bouquet</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="Imagenes/Card1.png" class="card-img-top" alt="Card1">
+                        <br>
+                        </div>  
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                            <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                            <li class="list-group-item">Estilo              Impresionismo</li>
+                            <li class="list-group-item">Tamaño       32,5 cm  (12,7 pulg; 42 cm  (16,5 pulg))</li>
+                          </ul>
+                
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin modal -->
+                
+                    </div>
+            </div>
+            <div class="col-4">
+                <!-- Inicia contenido de card -->
+                <div class="card" >
+                  <img src="Imagenes/Card2.jpg" class="card-img-top" alt="Le déjeuner des canotiers">
+                  <div class="card-body">
+                    <h5 class="card-title" id="capilla-real">Le déjeuner des canotiers, 1881</h5>
+                   
+                  
+                     <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal2">
+                        Conoce más
+                      </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Le déjeuner des canotiers</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="Imagenes/Card2.jpg" class="card-img-top" alt="Le déjeuner des canotiers">
+                      <br>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                        <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                        <li class="list-group-item">Estilo              Impresionismo</li>
+                        <li class="list-group-item">Tamaño       129,5 cm × 172,7 cm</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin modal -->
+              
+              
+                  </div>
+                </div>
+              
+              </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="Imagenes/Card3.png" class="card-img-top" alt="Card3">
+                    <div class="card-body">
+                      <h5 class="card-title" id="jardin">Femmes Dans Un Jardin, 1873</h5>
+                  
+                
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal3">
+                  Conoce más
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-4" id="exampleModalLabel">Femmes Dans Un Jardin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="Imagenes/Card3.png" class="card-img-top" alt="Card3">
+                        <br>
+                        </div>  
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                            <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                            <li class="list-group-item">Estilo              Impresionismo</li>
+                            <li class="list-group-item">Tamaño       21 5/8 por 25 3/4 pulg.
+                                55 por 65,5 cm</li>
+                          </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin modal -->
+                
+                    </div>
+            </div>
+                  
+        </div>
+
+      </div>
+    
+        <footer>
+            <div class="row footer">
+                <div class="col-sm-7 logo">
+                    <img src="Imagenes/logo2.png" width="55px" height="65px" style="padding-top: 15px;" alt="logo">
+                </div>
+                <div class="col-sm-5 logo2" style="color: #fff;">
+                    <ul style="padding-left: 15px;">
+                        <li class="nav-item lista">
+                            <a class="nav-link" aria-current="page" href="index2.html">Sobre el artista</a>
+                        </li>
+                        <li class="nav-item lista" style="padding-left: 15px;">
+                            <a class="nav-link" href="index3.html">Galeria</a>
+                        </li>
+                        <li class="nav-item lista" style="padding-left: 15px;">
+                            <a class="nav-link"  href="index4.html">Exposiciones</a>
+                        </li>
+                      </ul>
+                </div>
+            </dic>
+        </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+  </html>

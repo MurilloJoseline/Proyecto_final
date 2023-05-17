@@ -1,0 +1,310 @@
+<!doctype html>
+     <html lang="es">
+    <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="autor" content="Joseline Murillo">
+         <meta name="description" content="Home - Pierre-Auguste Renoir">
+         <meta name="keywords" content="Bootstrap, Bootstrap 5.3, framework, html, css, maquetación web, arte, Impresionista, pintor, frances, colores, oleo">
+         <title>Home - Pierre-Auguste Renoir</title>
+     <!-- La hoja de estilo de Bootstrap se enlaza con un CDN proporcionado por Bootstrap. -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <!-- Cuando añadimos hojas de estilo propias es MUY IMPORTANTE colocarlas despues de la hoja de estilos de Bootstrap para que los estilos se sobreescriban correctamente en el navegador-->
+         <link href="css/estilos.css" rel="stylesheet" type="text/css">
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+     
+    </head>
+     
+       <!-- Comienza Body -->
+
+    <body>
+         <!-- La etiqueta header es un contenedor para elemento propios del encabezado de un sitio web.
+         Todos los elementos de header deben ser iguales en todas las pantallas de nuestro sitio. -->
+         <header>
+           <!-- Bootstrap nos proporciona un templete básico para los menús de navegación por medio de la etiqueta nav y la clase navbar.
+           Esta información se puede encontrar en https://getbootstrap.com/docs/5.3/components/navbar/ -->
+           <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary nav-principal ">
+             <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/logo2.png" width="50" height="50" alt="logo">
+                </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                 <ul class="navbar-nav me-auto mb-2 lg-0" >
+                   <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="index2.html">Sobre el artista</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="index3.html">Galeria</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link"  href="index4.html">Exposiciones</a>
+                   </li>
+                 </ul>
+                
+               </div>
+             </div>
+           </nav>
+     
+         </header>
+
+         <br>
+
+        <div class="container-fluid">
+            <div class="row homeban">
+                <div class="col-12">
+                    <img src="Imagenes/Bannerhome.png" alt="homeban" width="100%">
+                </div>
+            </div>
+            <div class="row acercade">
+                <div class="col-md-6 offset-xsm-1" style="padding-left: 100px;">
+                    <h2 style="font-weight: bold; padding-top: 15%;">
+                        Acerca del artista
+                    </h2>
+                    <br>
+                    <p>
+                        Pierre-Auguste Renoir fue un pintor francés impresionista, que en la segunda parte de su carrera se interesó por la pintura de cuerpos femeninos en paisajes, inspirados a menudo en pinturas clásicas renacentistas y barrocas
+                    </p>
+                    <a class="btn btn-primary " href="index2.html" role="button">Conoce más</a>
+                </div>
+                <div class="col-6" style="padding-top: 3%;">
+                    <iframe width="460" height="315" src="https://www.youtube.com/embed/NEKXQoaKMOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container contenido">
+            <div class="row bloque-interno">
+                <h2 id="atractivos">Pinturas más conocidas</h2>
+                <!-- En este ejemplo estamos aplicando tres clases para las columnas que funcionarán para el responsive. La clase que contiene lg es para la visualización en dispositivos grandes, la clase md para dispositivos medianos y sm para dispositivos pequeños.-->
+                <div class="col-4">
+                    <div class="card">
+                        <img src="Imagenes/Card1.png" class="card-img-top" alt="Card1">
+                        <div class="card-body">
+                          <h5 class="card-title" id="flores">Fillette couchée sur l'herbe et jeune fille arrangeant un bouquet, 1890</h5>
+                      
+                    
+                     <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal1">
+                      Conoce más
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title fs-4" id="exampleModalLabel">Fillette couchée sur l'herbe et jeune fille arrangeant un bouquet</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="Imagenes/Card1.png" class="card-img-top" alt="Card1">
+                            <br>
+                            </div>  
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                                <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                                <li class="list-group-item">Estilo              Impresionismo</li>
+                                <li class="list-group-item">Tamaño       32,5 cm  (12,7 pulg; 42 cm  (16,5 pulg))</li>
+                              </ul>
+                    
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin modal -->
+                    
+                        </div>
+                </div>
+                <div class="col-4">
+                    <!-- Inicia contenido de card -->
+                    <div class="card" >
+                      <img src="Imagenes/Card2.jpg" class="card-img-top" alt="Le déjeuner des canotiers">
+                      <div class="card-body">
+                        <h5 class="card-title" id="capilla-real">Le déjeuner des canotiers, 1881</h5>
+                       
+                      
+                         <!-- Button trigger modal -->
+                         <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Conoce más
+                          </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Le déjeuner des canotiers</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="Imagenes/Card2.jpg" class="card-img-top" alt="Le déjeuner des canotiers">
+                          <br>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                            <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                            <li class="list-group-item">Estilo              Impresionismo</li>
+                            <li class="list-group-item">Tamaño       129,5 cm × 172,7 cm</li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                           
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fin modal -->
+                  
+                  
+                      </div>
+                    </div>
+                  
+                  </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="Imagenes/Card3.png" class="card-img-top" alt="Card3">
+                        <div class="card-body">
+                          <h5 class="card-title" id="jardin">Femmes Dans Un Jardin, 1873</h5>
+                      
+                    
+                     <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-chol1" data-bs-toggle="modal" data-bs-target="#modal3">
+                      Conoce más
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title fs-4" id="exampleModalLabel">Femmes Dans Un Jardin</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="Imagenes/Card3.png" class="card-img-top" alt="Card3">
+                            <br>
+                            </div>  
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Autor              Pierre-Auguste Renoir</li>
+                                <li class="list-group-item">Técnica       Óleo sobre lienzo</li>
+                                <li class="list-group-item">Estilo              Impresionismo</li>
+                                <li class="list-group-item">Tamaño       21 5/8 por 25 3/4 pulg.
+                                    55 por 65,5 cm</li>
+                              </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-chol1" data-bs-dismiss="modal">Cerrar</button>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin modal -->
+                    
+                        </div>
+                </div>
+                      
+            </div>
+              
+            <div class="row bloque-interno frase">
+                <div class="col-3 offset-sm-3">
+                    <img src="Imagenes/renoir.png" width="300px" alt="Renoir" style="margin-left: 30px;">
+                </div>
+                <div class="col-4 frase2">
+                    <h1>
+                        "Me gustan las <br> pinturas que<br> te hacer querer pasear <br>en ellas. "
+                    </h1>
+                    <h4>
+                        Pierre-August Renoir.
+                    </h4>
+
+                </div>
+            </div>
+   
+        </div>
+        <div class="container-fluid">
+
+            <div class="row contacto">
+                <div class="col-12">
+                    <h2>
+                        Contactanos
+                    </h2>
+                    <h5>
+                        ¿Necesitas  hablar con nosotros?
+                    </h5>
+                </div>
+            </div>
+            <div class="row formulario">
+                <div class="col-5 offset-sm-1 primero">
+                    <form>
+                        <div class="mb-3">
+                          <label  class="form-label">Nombre</label>
+                          <input type="text" class="form-control"  placeholder="">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                          <label  class="form-label">Comentario</label>
+                          <!-- en este caso usamos textarea en vez de input para incluir contenido en forma de texto largo -->
+                          <textarea class="form-control" placeholder=""></textarea>
+                        </div>
+                </div>
+                <div class="col-5  segundo">
+                    <h2 style="text-align: center;">
+                        Responde este formulario y nos pondremos en contacto contigo sobre el tema que necesites tratar
+                    </h2> <br>
+                    <div class="mb-3 form-check">
+                        <button type="submit" class="btn btn-secondary btn-lg" style="margin-left: 200px; background-color: #8F8459;">Enviar</button><br><br><br>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="margin-left: 180px;">
+                        <label class="form-check-label" for="exampleCheck1" style="color: #fff; font-family: 'Nanum Gothic', sans-serif; margin-left: 25px;">Acepto políticas</label>
+                      </div>
+                    </form>
+                    <u style="color: #fff; font-family: 'Nanum Gothic', sans-serif; margin-left: 170px;">
+                        Consulta los Avisos de privacidad
+                    </u>
+                </div>
+            </div>
+
+            <footer>
+            <dic class="row footer">
+                <div class="col-sm-7 logo">
+                    <img src="Imagenes/logo2.png" width="55px" height="65px" style="padding-top: 15px;" alt="logo">
+                </div>
+                <div class="col-sm-5 logo2" style="color: #fff;">
+                    <ul style="padding-left: 15px;">
+                        <li class="nav-item lista">
+                            <a class="nav-link" aria-current="page" href="index2.html">Sobre el artista</a>
+                        </li>
+                        <li class="nav-item lista" style="padding-left: 15px;">
+                            <a class="nav-link" href="index3.html">Galeria</a>
+                        </li>
+                        <li class="nav-item lista" style="padding-left: 15px;">
+                            <a class="nav-link"  href="index4.html">Exposiciones</a>
+                        </li>
+                      </ul>
+                </div>
+            </dic>
+            </footer>
+
+        </div>
+     <!-- El archivo JavaScript también se enlaza por medio de un CDN proporcionado por Bootstrap.
+         Los recursos de JavaScript se colocan antes de cerrar la etiqueta body para evitar que la
+     página tarde en cargar el contenido -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+     </html>
